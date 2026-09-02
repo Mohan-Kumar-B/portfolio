@@ -1,0 +1,489 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — "Violet Signal"
+ * Palette taken from the reference portfolio (deep plum canvas, violet glow),
+ * typography and component styling kept from the original site
+ * (Inter body + Space Grotesk display + JetBrains Mono labels).
+ * Light and dark themes are both first-class; never hardcode colors.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand tokens */
+  --color-deep: var(--deep);
+  --color-glow-violet: var(--glow-violet);
+  --color-glow-indigo: var(--glow-indigo);
+  --color-glow-plum: var(--glow-plum);
+}
+
+/* ---------- Light theme (default :root) ---------- */
+:root {
+  --radius: 1rem;
+
+  --deep: oklch(0.99 0.004 300);
+  --glow-violet: oklch(0.55 0.245 296);
+  --glow-indigo: oklch(0.49 0.24 285);
+  --glow-plum: oklch(0.62 0.2 320);
+
+  --background: var(--deep);
+  --foreground: oklch(0.22 0.035 295);
+  --card: oklch(1 0 0 / 70%);
+  --card-foreground: oklch(0.22 0.035 295);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.035 295);
+  --primary: var(--glow-violet);
+  --primary-foreground: oklch(0.99 0.004 300);
+  --secondary: oklch(0.95 0.015 300);
+  --secondary-foreground: oklch(0.28 0.04 295);
+  --muted: oklch(0.95 0.015 300);
+  --muted-foreground: oklch(0.5 0.035 292);
+  --accent: oklch(0.52 0.24 292);
+  --accent-foreground: oklch(0.99 0.004 300);
+  --destructive: oklch(0.577 0.245 27);
+  --destructive-foreground: oklch(0.99 0.004 300);
+  --border: oklch(0.4 0.05 295 / 16%);
+  --input: oklch(0.4 0.05 295 / 22%);
+  --ring: var(--glow-violet);
+
+  --glass-bg: oklch(1 0 0 / 62%);
+  --glass-bg-hover: oklch(1 0 0 / 85%);
+  --glass-border: oklch(0.4 0.05 295 / 14%);
+  --grid-line: oklch(0.4 0.05 295 / 7%);
+  --dot-color: oklch(1 0 0 / 55%);
+
+  --gradient-brand: linear-gradient(90deg, var(--glow-indigo), var(--glow-plum));
+  --shadow-glow: 0 0 28px oklch(0.55 0.245 296 / 0.28);
+  --shadow-card: 0 24px 60px -30px oklch(0.35 0.09 295 / 0.45);
+}
+
+/* ---------- Dark theme (reference look) ---------- */
+.dark {
+  --deep: oklch(0.17 0.028 300);
+  --glow-violet: oklch(0.62 0.22 296);
+  --glow-indigo: oklch(0.55 0.235 285);
+  --glow-plum: oklch(0.7 0.18 320);
+
+  --background: var(--deep);
+  --foreground: oklch(0.92 0.012 300);
+  --card: oklch(1 0 0 / 4%);
+  --card-foreground: oklch(0.92 0.012 300);
+  --popover: oklch(0.11 0.022 298);
+  --popover-foreground: oklch(0.92 0.012 300);
+  --primary: var(--glow-violet);
+  --primary-foreground: oklch(0.985 0.004 300);
+  --secondary: oklch(0.16 0.03 297 / 70%);
+  --secondary-foreground: oklch(0.92 0.012 300);
+  --muted: oklch(0.16 0.03 297 / 55%);
+  --muted-foreground: oklch(0.72 0.035 296);
+  --accent: oklch(0.79 0.145 300);
+  --accent-foreground: oklch(0.1 0.02 300);
+  --destructive: oklch(0.704 0.191 22);
+  --destructive-foreground: oklch(0.985 0.004 300);
+  --border: oklch(1 0 0 / 11%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--accent);
+
+  --glass-bg: oklch(1 0 0 / 4%);
+  --glass-bg-hover: oklch(1 0 0 / 8%);
+  --glass-border: oklch(1 0 0 / 11%);
+  --grid-line: oklch(1 0 0 / 3.5%);
+  --dot-color: oklch(1 0 0 / 55%);
+
+  --gradient-brand: linear-gradient(90deg, var(--glow-violet), var(--glow-plum));
+  --shadow-glow: 0 0 26px oklch(0.62 0.22 296 / 0.5);
+  --shadow-card: 0 24px 60px -30px oklch(0.02 0.01 300 / 0.98);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.4s ease,
+      color 0.4s ease;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--glow-violet) 35%, transparent);
+  }
+}
+
+/* ---------- Keyframes ---------- */
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes glowpulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes aurora-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(6%, 4%) scale(1.08);
+  }
+  66% {
+    transform: translate(-4%, -6%) scale(0.95);
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ring-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Motion utilities ---------- */
+
+@utility animate-floaty {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+@utility animate-glow {
+  animation: glowpulse 6s ease-in-out infinite;
+}
+
+@utility animate-aurora {
+  animation: aurora-drift 18s ease-in-out infinite;
+}
+
+@utility animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+@utility animate-ring {
+  animation: ring-pulse 3.2s ease-out infinite;
+}
+
+@utility animate-orbit {
+  animation: orbit-spin 26s linear infinite;
+}
+
+/* Scroll reveal primitive */
+@utility reveal {
+  opacity: 0;
+  transform: translate3d(0, 42px, 0) scale(0.965);
+  filter: blur(8px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+/* Element-local scroll parallax: --ep is -1..1 (set by use-scroll-motion) */
+@utility parallax-y {
+  transform: translate3d(0, calc(var(--ep, 0) * var(--par, 40px)), 0);
+  will-change: transform;
+}
+
+@utility parallax-soft {
+  transform: translate3d(0, calc(var(--ep, 0) * var(--par, 26px)), 0)
+    scale(calc(1 - var(--epabs, 0) * 0.015));
+  will-change: transform;
+}
+
+/* ---------- Scroll-driven interaction ----------
+ * --scroll-p     : 0..1 page progress
+ * --scroll-v     : -1..1 signed scroll velocity
+ * --scroll-vabs  : 0..1 absolute scroll velocity
+ * Set on <html> by use-scroll-motion.
+ */
+
+@utility scroll-skew {
+  transform: skewY(calc(var(--scroll-v, 0) * -2.2deg));
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+@utility scroll-stretch {
+  transform: scaleY(calc(1 + var(--scroll-vabs, 0) * 0.06));
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@utility scroll-drift {
+  transform: translate3d(0, calc(var(--scroll-p, 0) * -18vh), 0);
+  will-change: transform;
+}
+
+@utility scroll-drift-slow {
+  transform: translate3d(0, calc(var(--scroll-p, 0) * 12vh), 0);
+  will-change: transform;
+}
+
+/* ---------- Surface utilities ---------- */
+
+@utility glass {
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+}
+
+@utility glass-hover {
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  &:hover {
+    background-color: var(--glass-bg-hover);
+    border-color: color-mix(in oklab, var(--glow-violet) 50%, transparent);
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@utility text-gradient {
+  background-image: var(--gradient-brand);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-brand {
+  background-image: var(--gradient-brand);
+}
+
+@utility shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(circle at 2px 2px, var(--dot-color) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@utility grid-lines {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+}
+
+@utility hairline {
+  background-color: var(--glass-border);
+  height: 1px;
+}
+
+/* 3D tilt surface (driven by TiltCard) */
+@utility tilt-surface {
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease-out;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .parallax-y,
+  .parallax-soft,
+  .scroll-skew,
+  .scroll-stretch,
+  .scroll-drift,
+  .scroll-drift-slow {
+    transform: none !important;
+  }
+}
+
+/* Mobile: keep ambient motion calm */
+@media (max-width: 767px) {
+  .animate-floaty,
+  .animate-aurora,
+  .animate-orbit {
+    animation: none;
+  }
+  .scroll-drift,
+  .scroll-drift-slow,
+  .parallax-y,
+  .parallax-soft {
+    transform: none;
+  }
+}
+
+/* ---------- Interactive hover flourishes ---------- */
+@utility shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%) skewX(-18deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, white 32%, transparent),
+    transparent
+  );
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+.shine:hover::after {
+  transform: translateX(120%) skewX(-18deg);
+}
+
+@utility hover-glow {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+.hover-glow:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow);
+  border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shine::after,
+  .hover-glow:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ---------- Custom cursor ---------- */
+@media (pointer: fine) {
+  .cursor-dot,
+  .cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    border-radius: 9999px;
+    will-change: transform;
+  }
+  .cursor-dot {
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background: var(--accent);
+    box-shadow: var(--shadow-glow);
+  }
+  .cursor-ring {
+    width: 34px;
+    height: 34px;
+    margin: -17px 0 0 -17px;
+    border: 1px solid color-mix(in oklab, var(--accent) 55%, transparent);
+    transition:
+      width 0.25s ease,
+      height 0.25s ease,
+      margin 0.25s ease,
+      background-color 0.25s ease;
+  }
+  .cursor-ring-active {
+    width: 58px;
+    height: 58px;
+    margin: -29px 0 0 -29px;
+    background-color: color-mix(in oklab, var(--accent) 12%, transparent);
+  }
+}
+
+/* magnetic children ease back smoothly */
+[data-magnetic-scope] a,
+[data-magnetic-scope] button {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
