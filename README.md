@@ -2,9 +2,9 @@
 
 This portfolio was built with My idea with Help of [Lovable](https://lovable.dev).
 
+checkout My Portfolio : https://mohankumarb-portfolio.netlify.app/
 
-
-Loveable 
+Loveable Ai
    ↓
 VS Code
    ↓
