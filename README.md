@@ -1,22 +1,19 @@
 
 
-This project was built with [Lovable](https://lovable.dev).
+This portfolio was built with My idea with Help of [Lovable](https://lovable.dev).
 
-## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b2be41a5-d414-4bde-bee8-b1b828a4b0b8).
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Loveable 
+   ↓
+VS Code
+   ↓
+GitHub Desktop
+   ↓
+GitHub
+   ↓
+Netlify
+   ↓
+🌍 LIVE WEBSITE
 
-## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
