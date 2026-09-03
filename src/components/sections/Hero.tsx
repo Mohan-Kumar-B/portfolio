@@ -142,18 +142,22 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Cloud — overlapping lower-right frame */}
+{/* Cloud — larger box, overlapping bottom-right frame */}
 <div
-  className="glass absolute right-[-24px] top-[76%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute -right-6 bottom-[-20px] z-30 rounded-2xl px-5 py-4 shadow-glow"
   style={{
     transform:
       "translate(calc(var(--mx) * 18px), calc(var(--my) * -18px))",
     transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
-  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-    Cloud
-  </span>
+  <div className="font-display text-2xl font-bold text-accent">
+    CLOUD
+  </div>
+
+  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+    DATA INFRASTRUCTURE
+  </div>
 </div>
     </div>
   );
