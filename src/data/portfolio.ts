@@ -74,10 +74,10 @@ const LINKEDIN = "https://www.linkedin.com/in/mohan-kumar-30s/";
 export const profile: Profile = {
   name: "Mohan Kumar B",
   initial: "M",
-  role: "Data Analyst",
-  availability: "Open to data analyst roles",
+  role: "Aspiring Data Professional",
+  availability: "Open to data & analytics opportunities",
   tagline:
-    "I turn raw operational data into clear, decision-ready answers — from SQL and Python pipelines to dashboards a busy team can read in ten seconds.",
+    "I work across the data lifecycle — using SQL, Python, databases and BI tools to collect, transform, analyze and communicate data for better decisions.",
   portrait: "/assets/portrait.png",
   portraitAlt: "Mohan Kumar B, aspiring data analyst",
   highlight: { value: "2", label: "Analytics internships" },
