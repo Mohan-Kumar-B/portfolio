@@ -98,14 +98,12 @@ function PortraitStage() {
       </div>
 
       {/* Floating chips that drift against the pointer */}
-     {/* Floating chips — slightly overlapping the portrait frame */}
-
-{/* SQL — overlapping upper-left frame */}
+     {/* Floating chips that drift against the pointer */}
 <div
-  className="glass absolute left-[-24px] top-[16%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute -left-14 top-10 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * -18px), calc(var(--my) * -14px))",
+      "translate(calc(var(--mx) * -22px), calc(var(--my) * -18px))",
     transition: "transform 0.4s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
@@ -114,12 +112,11 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Power BI — overlapping upper-right frame */}
 <div
-  className="glass absolute right-[-24px] top-[30%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute -right-10 top-1/3 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * 20px), calc(var(--my) * 16px))",
+      "translate(calc(var(--mx) * 26px), calc(var(--my) * 20px))",
     transition: "transform 0.45s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
@@ -128,37 +125,21 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Python — overlapping lower-left frame */}
 <div
-  className="glass absolute left-[-24px] top-[62%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass animate-floaty absolute -bottom-8 left-2 z-20 rounded-2xl px-5 py-4 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * -20px), calc(var(--my) * -16px))",
-    transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
-  }}
->
-  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-    Python
-  </span>
-</div>
-
-{/* Cloud — larger box, overlapping bottom-right frame */}
-<div
-  className="glass absolute -right-6 bottom-[-20px] z-30 rounded-2xl px-5 py-4 shadow-glow"
-  style={{
-    transform:
-      "translate(calc(var(--mx) * 18px), calc(var(--my) * -18px))",
-    transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
+      "translate(calc(var(--mx) * 18px), calc(var(--my) * -22px))",
   }}
 >
   <div className="font-display text-2xl font-bold text-accent">
-    CLOUD
+    {profile.highlight.value}
   </div>
 
   <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-    DATA INFRASTRUCTURE
+    {profile.highlight.label}
   </div>
-</div>
+</div>  
     </div>
   );
 }

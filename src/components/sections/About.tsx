@@ -75,7 +75,7 @@ export function About() {
         {/* RIGHT — Data lifecycle visual */}
         <Reveal delay={200}>
           <TiltCard max={6}>
-            <div className="group relative min-h-[520px] overflow-hidden rounded-3xl bg-linear-to-br from-glow-indigo to-glow-plum p-7 shadow-card">
+  <div className="group relative min-h-[600px] overflow-hidden rounded-3xl bg-linear-to-br from-glow-indigo to-glow-plum p-7 shadow-card">
               
               {/* Background grid */}
               <div className="dot-grid absolute inset-0 scale-110 opacity-30 mix-blend-overlay transition-transform duration-700 group-hover:scale-100" />
@@ -100,7 +100,7 @@ export function About() {
               </div>
 
               {/* Data flow */}
-              <div className="relative z-10 mt-8 space-y-3">
+              <div className="relative z-10 mt-8 space-y-3 pb-20">
                 {dataFlow.map((step, index) => (
                   <div key={step.number} className="relative">
                     <div className="flex items-center gap-4 rounded-2xl border border-foreground/10 bg-background/10 p-4 backdrop-blur-sm transition-all duration-300 hover:border-accent/40 hover:bg-background/20">
@@ -131,7 +131,7 @@ export function About() {
               </div>
 
               {/* Bottom message */}
-              <div className="absolute bottom-6 left-7 right-7 border-t border-foreground/10 pt-5">
+              <div className="absolute bottom-5 left-7 right-7 border-t border-foreground/10 pt-4">
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/50">
                   Signal in the noise
                 </p>
