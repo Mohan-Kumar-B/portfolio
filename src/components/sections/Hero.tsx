@@ -98,14 +98,14 @@ function PortraitStage() {
       </div>
 
       {/* Floating chips that drift against the pointer */}
-      {/* Floating chips that drift against the pointer */}
+     {/* Floating chips — slightly overlapping the portrait frame */}
 
-{/* SQL */}
+{/* SQL — overlapping upper-left frame */}
 <div
-  className="glass absolute -left-14 top-10 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute left-[-24px] top-[16%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * -22px), calc(var(--my) * -18px))",
+      "translate(calc(var(--mx) * -18px), calc(var(--my) * -14px))",
     transition: "transform 0.4s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
@@ -114,12 +114,12 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Power BI */}
+{/* Power BI — overlapping upper-right frame */}
 <div
-  className="glass absolute -right-10 top-1/3 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute right-[-24px] top-[30%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * 26px), calc(var(--my) * 20px))",
+      "translate(calc(var(--mx) * 20px), calc(var(--my) * 16px))",
     transition: "transform 0.45s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
@@ -128,12 +128,12 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Python */}
+{/* Python — overlapping lower-left frame */}
 <div
-  className="glass absolute -right-12 bottom-20 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  className="glass absolute left-[-24px] top-[62%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * 22px), calc(var(--my) * -18px))",
+      "translate(calc(var(--mx) * -20px), calc(var(--my) * -16px))",
     transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
@@ -142,20 +142,18 @@ function PortraitStage() {
   </span>
 </div>
 
-{/* Data scale */}
+{/* Cloud — overlapping lower-right frame */}
 <div
-  className="glass animate-floaty absolute -bottom-8 left-2 z-20 rounded-2xl px-5 py-4 shadow-glow"
+  className="glass absolute right-[-24px] top-[76%] z-30 rounded-2xl px-4 py-2.5 shadow-glow"
   style={{
     transform:
-      "translate(calc(var(--mx) * 18px), calc(var(--my) * -22px))",
+      "translate(calc(var(--mx) * 18px), calc(var(--my) * -18px))",
+    transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
   }}
 >
-  <div className="font-display text-2xl font-bold text-accent">
-    50K+
-  </div>
-  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-    RECORDS ANALYZED
-  </div>
+  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+    Cloud
+  </span>
 </div>
     </div>
   );
