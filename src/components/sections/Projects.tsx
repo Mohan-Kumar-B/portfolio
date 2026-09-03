@@ -18,11 +18,10 @@ const projects = [
       "https://github.com/Mohan-Kumar-B/E-Commerce_DataPipline",
   },
   {
-    {
-  title: "STRATO — Gamified Engagement Platform",
-  description:
-    "A gamified learning platform designed to improve academic and social engagement for students with ADHD and Autism. User-behavior tracking helped inform feature design and create a more engaging learning experience.",
-  technologies: ["React.js", "Spring Boot", "MongoDB", "Tailwind CSS"],
+    title: "STRATO — Gamified Engagement Platform",
+    description:
+      "A gamified learning platform designed to improve academic and social engagement for students with ADHD and Autism. User-behavior tracking helped inform feature design and create a more engaging learning experience.",
+    technologies: ["React.js", "Spring Boot", "MongoDB", "Tailwind CSS"],
     github:
       "https://github.com/Mohan-Kumar-B/Strato",
   },
