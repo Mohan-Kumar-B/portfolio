@@ -95,7 +95,7 @@ export function Contact() {
                     <input
                       required
                       name="name"
-                      placeholder="Ada Lovelace"
+                      placeholder="Your Name"
                       className="w-full rounded-xl border border-input bg-secondary/60 px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent focus:ring-1 focus:ring-accent"
                     />
                   </label>
