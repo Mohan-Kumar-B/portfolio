@@ -106,7 +106,7 @@ export const profile: Profile = {
   ],
   stats: [
   { value: "3", label: "Industry Internships" },
-  { value: "4+", label: "Data Domains" },
+  { value: "10+", label: "Tools & Technologies" },
   { value: "2026", label: "B.E. CSE Graduate" },
 ],
   about: {
@@ -125,13 +125,13 @@ export const profile: Profile = {
   },
   experience: [
     {
-      role: "Web Development Intern",
-      company: "Codsoft",
-      period: "Aug 2024 — Sep 2024",
-      location: "Remote",
+      role: "Data Analyst Intern",
+      company: "Roots Industries India Limited",
+      period: "May 2025 — June 2025",
+      location: "Hybrid - Coimbatore",
       bullets: [
-        "Built responsive web projects with HTML, CSS and JavaScript, delivering each task within the assigned sprint timeline.",
-        "Applied clean component structure and version control with Git while iterating on feedback from the mentor reviews.",
+        "Analyzed sales and production data using SQL and Excel to identify trends, investigate performance patterns and support business reporting.",
+        "Built automated Excel reporting dashboards using pivot tables, VLOOKUP and XLOOKUP to track key performance metrics and reduce repetitive reporting work."
       ],
     },
     {
@@ -144,14 +144,15 @@ export const profile: Profile = {
         "Worked with Git, AWS fundamentals and application deployment while collaborating on backend development and database-related tasks."
       ],
     },
+    
     {
-      role: "Data Analyst Intern",
-      company: "Roots Industries India Limited",
-      period: "Nov 2023 — Dec 2023",
+      role: "Web Development Intern",
+      company: "Codsoft",
+      period: "Aug 2024 — Sep 2024",
       location: "Online",
       bullets: [
-        "Analyzed sales and production data using SQL and Excel to identify trends, investigate performance patterns and support business reporting.",
-        "Built automated Excel reporting dashboards using pivot tables, VLOOKUP and XLOOKUP to track key performance metrics and reduce repetitive reporting work."
+        "Built responsive web projects with HTML, CSS and JavaScript, delivering each task within the assigned sprint timeline.",
+        "Applied clean component structure and version control with Git while iterating on feedback from the mentor reviews.",
       ],
     },
   ],

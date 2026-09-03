@@ -7,7 +7,7 @@ const projects = [
       "A Saudi-focused data project analyzing business data to uncover trends, performance patterns, and actionable insights for decision-making.",
     technologies: ["SQL", "Python", "Power BI"],
     github:
-      "https://github.com/Mohan-Kumar-B/saudi-business-intelligence",
+      "https://github.com/Mohan-Kumar-B/Saudi-Retail-Operations-Analytics",
   },
   {
     title: "E-Commerce Data Pipeline",
@@ -15,15 +15,16 @@ const projects = [
       "An end-to-end data engineering project that ingests, validates, transforms, and stores e-commerce data in PostgreSQL for analytics and reporting.",
     technologies: ["Python", "SQL", "PostgreSQL", "ETL"],
     github:
-      "https://github.com/Mohan-Kumar-B/ecommerce-data-pipeline",
+      "https://github.com/Mohan-Kumar-B/E-Commerce_DataPipline",
   },
   {
-    title: "STRATO — Atmospheric Data Intelligence",
-    description:
-      "A data platform that processes atmospheric data to explore environmental patterns, detect anomalies, and turn raw data into meaningful insights.",
-    technologies: ["Python", "SQL", "PostgreSQL", "APIs"],
+    {
+  title: "STRATO — Gamified Engagement Platform",
+  description:
+    "A gamified learning platform designed to improve academic and social engagement for students with ADHD and Autism. User-behavior tracking helped inform feature design and create a more engaging learning experience.",
+  technologies: ["React.js", "Spring Boot", "MongoDB", "Tailwind CSS"],
     github:
-      "https://github.com/Mohan-Kumar-B/strato",
+      "https://github.com/Mohan-Kumar-B/Strato",
   },
 ];
 

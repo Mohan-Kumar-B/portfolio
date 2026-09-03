@@ -98,39 +98,65 @@ function PortraitStage() {
       </div>
 
       {/* Floating chips that drift against the pointer */}
-      <div
-        className="glass absolute -left-14 top-10 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
-        style={{
-          transform: "translate(calc(var(--mx) * -22px), calc(var(--my) * -18px))",
-          transition: "transform 0.4s cubic-bezier(0.22,1,0.36,1)",
-        }}
-      >
-        <span className="font-mono text-[10px] uppercase tracking-widest text-accent">SQL</span>
-      </div>
-      <div
-        className="glass absolute -right-10 top-1/3 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
-        style={{
-          transform: "translate(calc(var(--mx) * 26px), calc(var(--my) * 20px))",
-          transition: "transform 0.45s cubic-bezier(0.22,1,0.36,1)",
-        }}
-      >
-        <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-          Power BI
-        </span>
-      </div>
-      <div
-        className="glass animate-floaty absolute -bottom-8 left-2 z-20 rounded-2xl px-5 py-4 shadow-glow"
-        style={{
-          transform: "translate(calc(var(--mx) * 18px), calc(var(--my) * -22px))",
-        }}
-      >
-        <div className="font-display text-2xl font-bold text-accent">
-          {profile.highlight.value}
-        </div>
-        <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-          {profile.highlight.label}
-        </div>
-      </div>
+      {/* Floating chips that drift against the pointer */}
+
+{/* SQL */}
+<div
+  className="glass absolute -left-14 top-10 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  style={{
+    transform:
+      "translate(calc(var(--mx) * -22px), calc(var(--my) * -18px))",
+    transition: "transform 0.4s cubic-bezier(0.22,1,0.36,1)",
+  }}
+>
+  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+    SQL
+  </span>
+</div>
+
+{/* Power BI */}
+<div
+  className="glass absolute -right-10 top-1/3 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  style={{
+    transform:
+      "translate(calc(var(--mx) * 26px), calc(var(--my) * 20px))",
+    transition: "transform 0.45s cubic-bezier(0.22,1,0.36,1)",
+  }}
+>
+  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+    Power BI
+  </span>
+</div>
+
+{/* Python */}
+<div
+  className="glass absolute -right-12 bottom-20 z-20 rounded-2xl px-4 py-2.5 shadow-glow"
+  style={{
+    transform:
+      "translate(calc(var(--mx) * 22px), calc(var(--my) * -18px))",
+    transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1)",
+  }}
+>
+  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+    Python
+  </span>
+</div>
+
+{/* Data scale */}
+<div
+  className="glass animate-floaty absolute -bottom-8 left-2 z-20 rounded-2xl px-5 py-4 shadow-glow"
+  style={{
+    transform:
+      "translate(calc(var(--mx) * 18px), calc(var(--my) * -22px))",
+  }}
+>
+  <div className="font-display text-2xl font-bold text-accent">
+    50K+
+  </div>
+  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+    RECORDS ANALYZED
+  </div>
+</div>
     </div>
   );
 }
