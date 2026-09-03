@@ -80,7 +80,7 @@ export const profile: Profile = {
     "I work across the data lifecycle — using SQL, Python, databases and BI tools to collect, transform, analyze and communicate data for better decisions.",
   portrait: "/assets/portrait.png",
   portraitAlt: "Mohan Kumar B, Data Professional",
-  highlight: { value: "2", label: "Analytics internships" },
+  highlight: { value: "2+", label: "Analytics internships" },
   marquee: [
   "SQL",
   "Python",

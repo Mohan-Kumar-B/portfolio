@@ -121,7 +121,7 @@ function PortraitStage() {
   }}
 >
   <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-    Power BI
+    Python
   </span>
 </div>
 
