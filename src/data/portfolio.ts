@@ -74,19 +74,28 @@ const LINKEDIN = "https://www.linkedin.com/in/mohan-kumar-30s/";
 export const profile: Profile = {
   name: "Mohan Kumar B",
   initial: "M",
-  role: "Aspiring Data Professional",
+  role: "Data Professional",
   availability: "Open to data & analytics opportunities",
   tagline:
     "I work across the data lifecycle — using SQL, Python, databases and BI tools to collect, transform, analyze and communicate data for better decisions.",
   portrait: "/assets/portrait.png",
-  portraitAlt: "Mohan Kumar B, aspiring data analyst",
+  portraitAlt: "Mohan Kumar B, Data Professional",
   highlight: { value: "2", label: "Analytics internships" },
-  marquee: ["SQL", "Python", "Power BI", "Excel", "Pandas", "Data Storytelling"],
+  marquee: [
+  "SQL",
+  "Python",
+  "Databases",
+  "ETL",
+  "Power BI",
+  "Data Analytics",
+  "Data Engineering",
+],
   resumeUrl: "/assets/resume.pdf",
   nav: [
     { label: "Home", href: "#top" },
     { label: "About Me", href: "#about" },
     { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
     { label: "Contact", href: "#contact" },
   ],
@@ -96,23 +105,23 @@ export const profile: Profile = {
     { label: "LinkedIn", url: LINKEDIN, icon: "linkedin" },
   ],
   stats: [
-    { value: "2", label: "Internships completed" },
-    { value: "10+", label: "Tools & technologies" },
-    { value: "2026", label: "B.E. graduating year" },
-  ],
+  { value: "3", label: "Industry Internships" },
+  { value: "4+", label: "Data Domains" },
+  { value: "2026", label: "B.E. CSE Graduate" },
+],
   about: {
-    heading: "The person behind the dashboards",
+    heading: "The person behind the data",
     paragraphs: [
-      "I'm Mohan Kumar B, a Computer Science Engineering student at Sri Krishna College of Technology, Coimbatore, building a career in analytics. What pulled me in was a simple question during an internship review: why did two reports show two different numbers? Chasing that answer turned into the work I now want to do full time.",
-      "I work across SQL, Python and Excel to clean messy data, find the signal in it, and hand back something a team can act on. I care about honest caveats, reproducible queries, and charts that answer the question without a legend lecture.",
+      "I'm Mohan Kumar B, a Computer Science Engineering graduate with an interest in building a career in the data field. My background combines programming, databases, SQL, data analysis and business intelligence, giving me a foundation to work across different stages of the data lifecycle.", 
+      "I enjoy working with data from collection and transformation through analysis and visualization. I use SQL and Python to work with data, databases and transformations, while tools such as Power BI and Excel help me communicate findings clearly and support business decisions.",
     ],
     personality:
-      "Off the clock: I rebuild spreadsheets nobody asked me to rebuild, read up on new BI tooling, and will happily argue about whether that chart needed to be a pie.",
+      "I'm naturally curious about how data moves, how systems produce it, and how it can be transformed into something useful for people and businesses.",
     facts: [
-      { value: "2", label: "Internships" },
-      { value: "7.5", label: "CGPA / 10" },
-      { value: "SQL", label: "Daily driver" },
-    ],
+  { value: "CSE", label: "Engineering Background" },
+  { value: "SQL", label: "Core Skill" },
+  { value: "Data", label: "Career Focus" },
+],
   },
   experience: [
     {
@@ -131,8 +140,8 @@ export const profile: Profile = {
       period: "Jun 2024 — Jul 2024",
       location: "Coimbatore, India",
       bullets: [
-        "Developed full-stack web applications using Python with Django/Flask, optimizing backend logic, database structures and API integrations.",
-        "Acquired hands-on experience with deployment and version control tools such as Git and AWS.",
+        "Developed full-stack applications using Python, Django/Flask, databases and REST APIs, gaining hands-on experience with backend systems, data handling and application workflows.",
+        "Worked with Git, AWS fundamentals and application deployment while collaborating on backend development and database-related tasks."
       ],
     },
     {
@@ -141,8 +150,8 @@ export const profile: Profile = {
       period: "Nov 2023 — Dec 2023",
       location: "Online",
       bullets: [
-        "Analyzed sales and production data using Excel and SQL to identify trends and support monthly business reporting.",
-        "Built automated Excel dashboards with pivot tables, VLOOKUP and XLOOKUP to track key performance metrics, reducing manual reporting effort.",
+        "Analyzed sales and production data using SQL and Excel to identify trends, investigate performance patterns and support business reporting.",
+        "Built automated Excel reporting dashboards using pivot tables, VLOOKUP and XLOOKUP to track key performance metrics and reduce repetitive reporting work."
       ],
     },
   ],
@@ -173,43 +182,54 @@ export const profile: Profile = {
     },
   ],
   skills: [
-    {
-      title: "Programming & Query",
-      items: ["SQL", "Python", "Pandas", "NumPy", "R", "Excel Formulas & VBA"],
-    },
-    {
-      title: "BI & Visualization",
-      items: [
-        "Power BI",
-        "Tableau",
-        "Excel Dashboards",
-        "Pivot Tables",
-        "Matplotlib",
-        "Seaborn",
-        "Looker Studio",
-      ],
-    },
-    {
-      title: "Analytics & Methods",
-      items: [
-        "Data Cleaning",
-        "Exploratory Data Analysis",
-        "Descriptive Statistics",
-        "Trend & Cohort Analysis",
-        "Forecasting",
-        "KPI Reporting",
-        "Data Storytelling",
-      ],
-    },
-    {
-      title: "Data Platforms & Tools",
-      items: ["MySQL", "PostgreSQL", "MongoDB", "Jupyter Notebook", "Git & GitHub", "AWS Basics"],
-    },
-  ],
+  {
+    title: "Programming & Data",
+    items: [
+      "Python",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Excel",
+    ],
+  },
+  {
+    title: "Databases & Data Management",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Data Modeling",
+      "SQL Queries",
+      "Data Transformation",
+    ],
+  },
+  {
+    title: "Analytics & Business Intelligence",
+    items: [
+      "Power BI",
+      "Excel Dashboards",
+      "Statistics",
+      "KPI Analysis",
+      "Data Visualization",
+      "Data Storytelling",
+    ],
+  },
+  {
+    title: "Data Engineering Foundations",
+    items: [
+      "ETL / ELT",
+      "Data Pipelines",
+      "APIs",
+      "Python Automation",
+      "Git & GitHub",
+      "AWS Fundamentals",
+    ],
+  },
+],
   contact: {
-    heading: "Let's put your numbers on the record.",
+    heading:"Let's build something with data.",
     blurb:
-      "Open to data analyst, business analyst and BI roles, plus internships and freelance analysis work. Email gets the fastest reply.",
+      "Open to entry-level opportunities across Data Analytics, Business Intelligence, Business Analytics and Data Engineering. I'm interested in roles where I can work with data, technology and business problems.",
     email: EMAIL,
     linkedin: { label: "linkedin.com/in/mohan-kumar-30s", url: LINKEDIN },
     github: { label: "github.com/Mohan-Kumar-B", url: GITHUB },

@@ -7,14 +7,16 @@ import { CursorGlow } from "@/components/CursorGlow";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
+import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Contact } from "@/components/sections/Contact";
 import { profile } from "@/data/portfolio";
 import { useScrollMotion } from "@/hooks/use-scroll-motion";
 
-const title = `${profile.name} — ${profile.role} Portfolio`;
+const title = `${profile.name} — Data & Analytics Portfolio`;
+
 const description =
-  "Portfolio of Mohan Kumar B, an aspiring data analyst: analytics internships, SQL/Python/Power BI skills, education and contact.";
+  "Portfolio of Mohan Kumar B, a Computer Science Engineering graduate building practical solutions across data analytics, business intelligence and data engineering.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -66,6 +68,7 @@ function Index() {
         <Hero />
         <About />
         <Skills />
+        <Projects />
         <Experience />
         <Contact />
       </main>

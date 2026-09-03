@@ -165,8 +165,8 @@ export function Hero() {
 
         <Reveal delay={200}>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Turning <span className="font-medium text-foreground">raw numbers</span> into{" "}
-            <span className="font-medium italic text-accent">strategic decisions</span>.{" "}
+            Turning <span className="font-medium text-foreground">data lifecycle</span> into{" "}
+            <span className="font-medium italic text-accent">data to insight</span>.{" "}
             {profile.tagline}
           </p>
         </Reveal>
@@ -177,7 +177,7 @@ export function Hero() {
               href="#experience"
               className="shine group inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 font-semibold text-primary-foreground shadow-glow active:scale-95"
             >
-              View Experience
+              Explore My Work
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
           </Magnetic>
