@@ -174,7 +174,7 @@ export function Hero() {
         <Reveal delay={300} className="mt-12 flex flex-wrap gap-4">
           <Magnetic>
             <a
-              href="#experience"
+              href="#projects"
               className="shine group inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 font-semibold text-primary-foreground shadow-glow active:scale-95"
             >
               Explore My Work
