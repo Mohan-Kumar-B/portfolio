@@ -13,12 +13,12 @@ const projects = [
       "https://github.com/Mohan-Kumar-B/Saudi-Retail-Operations-Analytics",
   },
   {
-    title: "E-Commerce Data Pipeline",
+    title: "Customer Behaviour Analysis",
     description:
-      "An end-to-end data engineering project that ingests, validates, transforms, and stores e-commerce data in PostgreSQL for analytics and reporting.",
-    technologies: ["Python", "SQL", "PostgreSQL", "ETL"],
+      "An end-to-end data analytics project that explores, cleans, and analyzes customer behaviour using Python and PostgreSQL, with Power BI dashboards for interactive visualization and business insights".,
+    technologies: ["Python", "SQL", "PostgreSQL", "Power BI"],
     github:
-      "https://github.com/Mohan-Kumar-B/E-Commerce_DataPipline",
+      "https://github.com/Mohan-Kumar-B/Customer_Behaviour_Analytics",
   },
   {
     title: "STRATO — Gamified Engagement Platform",
