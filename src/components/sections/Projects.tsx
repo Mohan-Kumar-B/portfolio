@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Customer Behaviour Analysis",
     description:
-      "An end-to-end data analytics project that explores, cleans, and analyzes customer behaviour using Python and PostgreSQL, with Power BI dashboards for interactive visualization and business insights".,
+      "An end-to-end data analytics project that explores, cleans, and analyzes customer behaviour using Python and PostgreSQL, with Power BI dashboards for interactive visualization and business insights.",
     technologies: ["Python", "SQL", "PostgreSQL", "Power BI"],
     github:
       "https://github.com/Mohan-Kumar-B/Customer_Behaviour_Analytics",
